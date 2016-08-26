@@ -6,15 +6,14 @@ int sumaValores(int x, int y);//prototipos
 int restaValores(int x, int y);
 int divValores(int x, int y);
 int multiValores(int x, int y);
-int facValores(int x);
-int todValores(int x, int y, int fac);
+int facValores (int num1, int total, int contador);
 
 int main() //principal
 {
     int num1;
     int num2;
-    int i;
-    long int fac;
+    int total;
+    int contador;
     char seguir='s';
     int opcion=0;
 
@@ -56,11 +55,11 @@ int main() //principal
                 system("pause");
                 break;
             case 5:
-                facValores(num1);
+                facValores(num1, total, contador);
                 system("pause");
                 break;
             case 6:
-                todValores(num1, num2, fac);
+                todValores(num1, num2);
                 system("pause");
                 break;
             case 7:

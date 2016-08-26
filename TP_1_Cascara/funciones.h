@@ -35,24 +35,29 @@ int multiValores(int x, int y) // Multiplicacion
     printf("La multiplicacion entre %d y %d es %d\n", x, y, re);
 }
 
-int facValores(int x) //Revisar
+int facValores(int i, int total, int contador) //Revisar
 {
-    int i;
-    int fac;
-    for(i=1;i<=x;i++)
+    contador=1;
+    total=1;
+
+    while(contador<=i)
     {
-        fac=x*(x-1);
-        i++;
+        total=total*contador;
+        contador++;
     }
-    printf("El factorial del numero %d es %d\n", x, fac);
+
+    printf("El factorial del numero %d es %d\n", i, total);
 }
 
-int todValores(int x, int y, int fac)
+int todValores(int x, int y)
 {
     int re1; //Declaracion de variables extra
     int re2;
     float re3;
     int re4;
+    int re5;
+    int total=1;
+    int contador=1;
 
     re1=x + y;//suma
     printf("La suma entre %d y %d es %d\n", x, y, re1);
@@ -70,5 +75,12 @@ int todValores(int x, int y, int fac)
 
     re4=x * y; //multiplicacion
     printf("La multiplicacion entre %d y %d es %d\n", x, y, re4);
+
+    while(contador<=x) //factorial
+    {
+        total=total*contador;
+        contador++;
+    }
+    printf("El factorial del numero %d es %d\n", x, total);
 }
 
