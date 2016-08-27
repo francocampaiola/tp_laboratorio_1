@@ -2,30 +2,30 @@
 #include <stdlib.h>
 #include "funciones.h"
 
-int sumaValores(int x, int y);//prototipos
+//prototipos
+int sumaValores(int x, int y);
 int restaValores(int x, int y);
 int divValores(int x, int y);
 int multiValores(int x, int y);
-int facValores (int num1, int total, int contador);
+int facValores (int num1, float total, int contador);
 
 int main() //principal
 {
     int num1;
     int num2;
-    int total;
+    float total;
     int contador;
     char seguir='s';
     int opcion=0;
 
+    printf("Ingrese el primer valor: ");
+    scanf("%d", &num1);
+    printf("Ingrese el segundo valor: ");
+    scanf("%d", &num2);
+
     while(seguir=='s')
     {
-        printf("Ingresar 1er operando: ");
-        scanf("%d", &num1);
-
-        printf("Ingresar 2do operando: ");
-        scanf("%d", &num2);
-
-        printf("\n1- Calcular la suma (%d+%d)\n", num1, num2);
+        printf("1- Calcular la suma (%d+%d)\n", num1, num2);
         printf("2- Calcular la resta (%d-%d)\n", num1, num2);
         printf("3- Calcular la division (%d/%d)\n", num1, num2);
         printf("4- Calcular la multiplicacion (%d*%d)\n", num1, num2);
