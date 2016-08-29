@@ -46,7 +46,7 @@ int facValores(int i, float total, int contador)// Factorial
         contador++;
     }
 
-    printf("El factorial del numero %d es %f\n", i, total);
+    printf("El factorial del numero %d es %.1f\n", i, total);
 }
 
 int todValores(int x, int y)
