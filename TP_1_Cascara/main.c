@@ -1,74 +1,84 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <conio.h>
 #include "funciones.h"
+#include "funciones.c"
 
-//prototipos
-int sumaValores(int x, int y);
-int restaValores(int x, int y);
-int divValores(int x, int y);
-int multiValores(int x, int y);
-int facValores (int num1, float total, int contador);
-
-int main() //principal
+int main() //Principal
 {
-    int num1;
-    int num2;
-    float total;
-    int contador;
+    int num1=0;
+    int num2=0;
+    float total=0;
+    int contador=0;
     char seguir='s';
-    int opcion=0;
+    int opcion;
+    int confirma;
 
-    printf("Ingrese el primer valor: ");
-    scanf("%d", &num1);
-    printf("Ingrese el segundo valor: ");
-    scanf("%d", &num2);
+    do{
+        printf("1- Ingrese el primer numero (%d):\n", num1);
+        printf("2- Ingrese el segundo numero (%d):\n", num2);
+        printf("3- Calcular la suma (%d+%d)\n", num1, num2);
+        printf("4- Calcular la resta (%d-%d)\n", num1, num2);
+        printf("5- Calcular la division (%d/%d)\n", num1, num2);
+        printf("6- Calcular la multiplicacion (%d*%d)\n", num1, num2);
+        printf("7- Calcular el factorial del primer numero (%d!)\n", num1);
+        printf("8- Calcular todas las operaciones (suma, resta, mulitplicacion, division, y factorial)\n");
+        printf("9- Salir\n\n");
 
-    while(seguir=='s')
-    {
-        printf("1- Calcular la suma (%d+%d)\n", num1, num2);
-        printf("2- Calcular la resta (%d-%d)\n", num1, num2);
-        printf("3- Calcular la division (%d/%d)\n", num1, num2);
-        printf("4- Calcular la multiplicacion (%d*%d)\n", num1, num2);
-        printf("5- Calcular el factorial del primer numero (%d!)\n", num1);
-        printf("6- Calcular todas las operaciones (suma, resta, mulitplicacion, division, y factorial)\n");
-        printf("7- Salir\n\n");
-
-        printf("Elija un numero segun la opcion que desee: ");
+        printf("Elija la opcion que desee: ");
         scanf("%d",&opcion);
 
-        switch(opcion)
+        while (opcion<1 || opcion>9)
         {
+            printf("Error. Opcion no valida. Reingrese: ");
+            scanf("%d", &opcion);
+        }
+            switch(opcion)
+            {
             case 1:
+                printf("Ingrese primer valor: ");
+                scanf("%d", &num1);
+                break;
+            case 2:
+                printf("Ingrese segundo valor: ");
+                scanf("%d", &num2);
+                break;
+            case 3:
                 sumaValores(num1, num2);
                 system("pause");
                 break;
-            case 2:
+            case 4:
                 restaValores(num1, num2);
                 system("pause");
                 break;
-            case 3:
+            case 5:
                 divValores(num1, num2);
                 system("pause");
                 break;
-            case 4:
+            case 6:
                 multiValores(num1, num2);
                 system("pause");
                 break;
-            case 5:
+            case 7:
                 facValores(num1, total, contador);
                 system("pause");
                 break;
-            case 6:
+            case 8:
                 todValores(num1, num2);
                 system("pause");
                 break;
-            case 7:
-                printf("Usted eligio salir\n");
-                system("pause");
-                seguir = 'n';
+            case 9:
+                printf("Usted eligio salir. Confirma salir? s/n\n");
+                confirma= tolower(getche());
+                if (confirma=='s')
+                {
+                    seguir = 'n';
+                }
                 break;
-        }
-
-    return 0;
-    }
+            }
+    system("cls");
+    }while(seguir=='s');
+return 0;
 }
+
