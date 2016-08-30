@@ -23,7 +23,7 @@ int main() //Principal
         printf("5- Calcular la division (%d/%d)\n", num1, num2);
         printf("6- Calcular la multiplicacion (%d*%d)\n", num1, num2);
         printf("7- Calcular el factorial del primer numero (%d!)\n", num1);
-        printf("8- Calcular todas las operaciones (suma, resta, mulitplicacion, division, y factorial)\n");
+        printf("8- Calcular todas las operaciones (suma, resta, multiplicacion, division, y factorial)\n");
         printf("9- Salir\n\n");
 
         printf("Elija la opcion que desee: ");
