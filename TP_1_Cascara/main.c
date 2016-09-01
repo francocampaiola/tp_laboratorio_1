@@ -32,18 +32,18 @@ int main()
 
         while(opcion<1 || opcion>9)
         {
-            printf("Error. Opcion no valida. Reingrese: ");
+            printf("Error. Opcion no admitida. Debe estar entre 1 y 9. Reingrese: ");
             scanf("%d", &opcion);
         }
 
         switch(opcion)
         {
             case 1:
-                printf("Ingrese primer valor: ");
+                printf("Ingrese 1er operando: ");
                 scanf("%f", &num1);
                 break;
             case 2:
-                printf("Ingrese segundo valor: ");
+                printf("Ingrese 2do operando: ");
                 scanf("%f", &num2);
                 break;
             case 3:
