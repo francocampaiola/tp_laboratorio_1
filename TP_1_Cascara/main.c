@@ -5,44 +5,46 @@
 #include "funciones.h"
 #include "funciones.c"
 
-int main() //Principal
+int main()
 {
-    int num1=0;
-    int num2=0;
+    float num1=0;
+    float num2=0;
     float total=0;
     int contador=0;
     char seguir='s';
-    int opcion;
+    int opcion=0;
     int confirma;
 
-    do{
-        printf("1- Ingrese el primer numero (%d):\n", num1);
-        printf("2- Ingrese el segundo numero (%d):\n", num2);
-        printf("3- Calcular la suma (%d+%d)\n", num1, num2);
-        printf("4- Calcular la resta (%d-%d)\n", num1, num2);
-        printf("5- Calcular la division (%d/%d)\n", num1, num2);
-        printf("6- Calcular la multiplicacion (%d*%d)\n", num1, num2);
-        printf("7- Calcular el factorial del primer numero (%d!)\n", num1);
-        printf("8- Calcular todas las operaciones (suma, resta, multiplicacion, division, y factorial)\n");
+    do
+    {
+        printf("1- Ingresar 1er operando (A=%.2f)\n", num1);
+        printf("2- Ingresar 2do operando (B=%.2f)\n", num2);
+        printf("3- Calcular la suma (%.2f+%.2f)\n", num1, num2);
+        printf("4- Calcular la resta (%.2f-%.2f)\n", num1, num2);
+        printf("5- Calcular la division (%.2f/%.2f)\n", num1, num2);
+        printf("6- Calcular la multiplicacion (%.2f*%.2f)\n", num1, num2);
+        printf("7- Calcular el factorial (%.2f!)\n", num1);
+        printf("8- Calcular todas las operaciones disponibles\n");
         printf("9- Salir\n\n");
 
-        printf("Elija la opcion que desee: ");
+        printf("** Elija la opcion deseada: ");
         scanf("%d",&opcion);
 
-        while (opcion<1 || opcion>9)
+        while(opcion<1 || opcion>9)
         {
             printf("Error. Opcion no valida. Reingrese: ");
             scanf("%d", &opcion);
         }
-            switch(opcion)
-            {
+
+        switch(opcion)
+        {
             case 1:
                 printf("Ingrese primer valor: ");
-                scanf("%d", &num1);
+                scanf("%f", &num1);
                 break;
             case 2:
                 printf("Ingrese segundo valor: ");
-                scanf("%d", &num2);
+                scanf("%f", &num2);
                 break;
             case 3:
                 sumaValores(num1, num2);
@@ -65,7 +67,7 @@ int main() //Principal
                 system("pause");
                 break;
             case 8:
-                todValores(num1, num2);
+                allValores(num1, num2);
                 system("pause");
                 break;
             case 9:
@@ -76,9 +78,9 @@ int main() //Principal
                     seguir = 'n';
                 }
                 break;
-            }
-    system("cls");
-    }while(seguir=='s');
+        }
+        system("cls");
+    }while (seguir=='s');
+
 return 0;
 }
-

@@ -1,90 +1,59 @@
-#ifndef FUNCIONES_C_INCLUDED
-#define FUNCIONES_C_INCLUDED
-#endif
+//Prototipos
 
-//Desarrollo de las funciones
+float sumaValores (float x, float y);
+float restaValores(float x, float y);
+float divValores(float x, float y);
+float multiValores(float x, float y);
+long int facValores(float x, float total, int contador);
+float allValores(float x, float y);
 
-int sumaValores(int x, int y) //Suma
-{
-    int re;
-    re=x + y;
-    printf("La suma entre %d y %d es %d\n", x, y, re);
-}
+/** Funcion sumaValores
+/** \brief Suma los valores ingresados.
+ * \param Primer numero a sumar.
+ * \param Segundo numero a sumar.
+ * \return Retorna la respuesta de la suma entre los numeros ingresados.
+ */
 
-int restaValores(int x, int y) //Resta
-{
-    int re;
-    re=x - y;
-    printf("La resta entre %d y %d es %d\n", x, y, re);
-}
+/** Funcion restaValores
+/** \brief Resta los valores ingresados.
+ * \param Primer numero a restar.
+ * \param Segundo numero a restar.
+ * \return Retorna la respuesta de la resta entre los numeros ingresados.
+ */
 
-int divValores(int x, int y) // Divison
-{
-    int re;
-    while (y==0)
-    {
-        printf("La division por 0 no esta permitida. Reingrese UNICAMENTE el segundo valor:");
-        scanf("%d", &y);
-    }
-    re=(float)x/y;
-    printf("La division entre %d y %d es %.2f\n", x, y, re);
-}
+/** Funcion divValores
+/** \brief Divide los valores ingresados. Está validada la división por 0. (No se puede realizar)
+ * \param Primer numero a dividir.
+ * \param Segundo numero a dividir.
+ * \return Retorna la respuesta de la división entre los numeros ingresados.
+ */
 
-int multiValores(int x, int y) // Multiplicacion
-{
-    int re;
-    re=x * y;
-    printf("La multiplicacion entre %d y %d es %d\n", x, y, re);
-}
+/** Funcion sumaValores
+/** \brief Suma los valores ingresados.
+ * \param Primer numero a sumar.
+ * \param Segundo numero a sumar.
+ * \return Retorna la respuesta de la suma entre los numeros ingresados.
+ */
 
-int facValores(int i, float total, int contador)// Factorial
-{
-    contador=1;
-    total=1;
+/** Funcion multiValores
+/** \brief Multiplica los valores ingresados.
+ * \param Primer numero a multiplicar.
+ * \param Segundo numero a multiplicar.
+ * \return Retorna la respuesta de la multiplicación entre los numeros ingresados.
+ */
 
-    while(contador<=i)
-    {
-        total=total*contador;
-        contador++;
-    }
-
-    printf("El factorial del numero %d es %.1f\n", i, total);
-}
-
-int todValores(int x, int y)
-{
-    int re1; //Declaracion de variables extra
-    int re2;
-    float re3;
-    int re4;
-    int re5;
-    float total=1;
-    int contador=1;
-
-    re1=x + y;//suma
-    printf("La suma entre %d y %d es %d\n", x, y, re1);
-
-    re2=x - y;//resta
-    printf("La resta entre %d y %d es %d\n", x, y, re2);
-
-    while (y==0)//validacion de 0
-    {
-    printf("La division por 0 no esta permitida. Reingrese UNICAMENTE el segundo valor:");
-    scanf("%d", &y);
-    }
-    re3=(float)x/y; //division
-    printf("La division entre %d y %d es %.2f\n", x, y, re3);
-
-    re4=x * y; //multiplicacion
-    printf("La multiplicacion entre %d y %d es %d\n", x, y, re4);
-
-    while(contador<=x) //factorial
-    {
-        total=total*contador;
-        contador++;
-    }
-    printf("El factorial del numero %d es %.1f\n", x, total);
-}
+/** Funcion facValores
+/** \brief Resuelve el factorial del primer numero ingresado.
+ * \param Numero a factorizar.
+ * \param Total de factorizacion.
+ * \param Contador.
+ * \return Retorna la respuesta del factorial en base al primer numero ingresado.
 
 
+/** Funcion todValores
+/** \brief Resuelve todas las operaciones (suma, resta, multiplicacion, division, y factorial del primer numero)
+ * \param Primer numero ingresado.
+ * \param Segundo numero ingresado.
+ * \return Retorna la respuesta de todas las operaciones a realizar.
+ */
 
