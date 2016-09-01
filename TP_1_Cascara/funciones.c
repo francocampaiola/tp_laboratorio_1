@@ -4,7 +4,7 @@ float sumaValores (float x, float y);
 float restaValores(float x, float y);
 float divValores(float x, float y);
 float multiValores(float x, float y);
-long int facValores(float x, float total, int contador);
+int facValores(float x, double total, int contador);
 float allValores(float x, float y);
 
 /** Funcion sumaValores

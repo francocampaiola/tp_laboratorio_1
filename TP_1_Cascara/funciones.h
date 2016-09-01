@@ -34,7 +34,7 @@ float multiValores(float x, float y) // Multiplicacion
     printf("La multiplicacion entre %.2f y %.2f es %.2f\n", x, y, re);
 }
 
-long int facValores(float x, float total, int contador)// Factorial
+int facValores(float x, double total, int contador)// Factorial
 {
     contador=1;
     total=1;
@@ -45,7 +45,7 @@ long int facValores(float x, float total, int contador)// Factorial
         contador++;
     }
 
-    printf("El factorial del numero %.1f es %f\n", x, total);
+    printf("El factorial del numero %.2f es %f\n", x, total);
 }
 
 float allValores(float x, float y)
