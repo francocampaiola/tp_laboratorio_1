@@ -13,17 +13,35 @@
 
 1472749492 c:\users\franco\desktop\proyecto 0\funciones.c
 
-1472750656 source:c:\users\franco\desktop\tp_laboratorio_1\tp_1_cascara\main.c
+1472918011 source:c:\users\franco\desktop\tp_laboratorio_1\tp_1_cascara\main.c
 	<stdio.h>
 	<stdlib.h>
 	<ctype.h>
 	<conio.h>
 	"funciones.h"
-	"funciones.c"
 
-1472767228 c:\users\franco\desktop\tp_laboratorio_1\tp_1_cascara\funciones.h
+1472918196 c:\users\franco\desktop\tp_laboratorio_1\tp_1_cascara\funciones.h
 
 1472767228 c:\users\franco\desktop\tp_laboratorio_1\tp_1_cascara\funciones.c
 
-1472767228 source:c:\users\franco\desktop\tp_laboratorio_1\tp_1_cascara\funciones.c
+1472918117 source:c:\users\franco\desktop\tp_laboratorio_1\tp_1_cascara\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1472914168 source:e:\tp_laboratorio_1\tp_1_cascara\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1472913398 source:e:\tp_laboratorio_1\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+	"funciones.h"
+
+1472914214 e:\tp_laboratorio_1\tp_1_cascara\funciones.h
+
+1472911038 e:\tp_laboratorio_1\tp_1_cascara\funciones.c
 

@@ -3,7 +3,6 @@
 #include <ctype.h>
 #include <conio.h>
 #include "funciones.h"
-#include "funciones.c"
 
 int main()
 {
@@ -23,9 +22,9 @@ int main()
         printf("4- Calcular la resta (%.2f-%.2f)\n", num1, num2);
         printf("5- Calcular la division (%.2f/%.2f)\n", num1, num2);
         printf("6- Calcular la multiplicacion (%.2f*%.2f)\n", num1, num2);
-        printf("7- Calcular el factorial (%.2f!)\n", num1);
+        printf("7- Calcular el factorial del 1er operando (%.2f!)\n", num1);
         printf("8- Calcular todas las operaciones disponibles\n");
-        printf("9- Salir\n\n");
+        printf("9- Salir del programa\n\n");
 
         printf("** Elija la opcion deseada: ");
         scanf("%d",&opcion);

@@ -1,64 +1,78 @@
 #ifndef FUNCIONES_H_INCLUDED
 #define FUNCIONES_H_INCLUDED
 
-float sumaValores (float x, float y) //Suma
-{
-    float re;
-    re=x+y;
-    printf("La suma entre %.2f y %.2f es %.2f\n", x, y, re);
-}
+//Prototipos
 
-float restaValores(float x, float y)
-{
-    float re;
-    re=x-y;
-    printf("La resta entre %.2f y %.2f es %.2f\n", x, y, re);
-}
+float sumaValores (float x, float y);
+float restaValores(float x, float y);
+float divValores(float x, float y);
+float multiValores(float x, float y);
+float facValores(float x, double total, int contador);
+float allValores(float x, float y);
 
-float divValores(float x, float y) // Divison
-{
-    float re;
-    while (y==0)
-    {
-        printf("La division por 0 no esta permitida. Reingrese unicamente el segundo valor:");
-        scanf("%f", &y);
-    }
-    re=x/y;
-    printf("La division entre %.2f y %.2f es %.2f\n", x, y, re);
-}
+//Documentacion
 
-float multiValores(float x, float y) // Multiplicacion
-{
-    float re;
-    re=x*y;
-    printf("La multiplicacion entre %.2f y %.2f es %.2f\n", x, y, re);
-}
+//Funcion sumaValores
 
-int facValores(float x, double total, int contador)// Factorial
-{
-    contador=1;
-    total=1;
+/** \brief Suma los valores ingresados.
+ *
+ * \param Primer numero a sumar.
+ * \param Segundo numero a sumar.
+ * \return Retorna la respuesta de la suma entre los numeros ingresados.
+ *
+ */
 
-    while(contador<=x)
-    {
-        total=total*contador;
-        contador++;
-    }
+ //Funcion restaValores
 
-    printf("El factorial del numero %.2f es %f\n", x, total);
-}
+/** \brief Resta los valores ingresados.
+ *
+ * \param Primer numero a restar.
+ * \param Segundo numero a restar.
+ * \return Retorna la respuesta de la resta entre los numeros ingresados.
+ *
+ */
 
-float allValores(float x, float y)
-{
-     float total=1;
-     int contador=1;
+//Funcion divValores
 
-     sumaValores (x, y);
-     restaValores(x, y);
-     divValores(x, y);
-     multiValores(x, y);
-     facValores(x, total, contador);
-}
+/** \brief Divide los valores ingresados. Está validada la división por 0. (No se puede realizar)
+ *
+ * \param Primer numero a dividir.
+ * \param Segundo numero a dividir.
+ * \return Retorna la respuesta de la división entre los numeros ingresados.
+ *
+ */
+
+//Funcion multiValores
+
+/** \brief Multiplica los valores ingresados.
+ *
+ * \param Primer numero a multiplicar.
+ * \param Segundo numero a multiplicar.
+ * \return Retorna la respuesta de la multiplicación entre los numeros ingresados.
+ *
+ */
+
+// Funcion facValores
+
+/** \brief Resuelve el factorial del primer numero ingresado.
+ *
+ * \param Numero a factorizar.
+ * \param Total de factorizacion.
+ * \param Contador.
+ * \return Retorna la respuesta del factorial en base al primer numero ingresado.
+ *
+ */
+
+//Funcion todValores
+
+/** \brief Resuelve todas las operaciones (suma, resta, multiplicacion, division, y factorial del primer numero)
+ *
+ * \param Primer numero ingresado.
+ * \param Segundo numero ingresado.
+ * \return Retorna la respuesta de todas las operaciones a realizar.
+ *
+ */
+
 
 #endif
 
