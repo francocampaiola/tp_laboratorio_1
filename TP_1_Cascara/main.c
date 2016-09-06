@@ -46,27 +46,69 @@ int main()
                 scanf("%f", &num2);
                 break;
             case 3:
-                sumaValores(num1, num2);
+                if (num1!=0 && num2!=0)
+                {
+                    sumaValores(num1, num2);
+                }
+                else
+                {
+                    printf("Primero debe cargar ambos operando.\n");
+                }
                 system("pause");
                 break;
             case 4:
-                restaValores(num1, num2);
+                if (num1!=0 && num2!=0)
+                {
+                    restaValores(num1, num2);
+                }
+                else
+                {
+                    printf("Primero debe cargar ambos operando.\n");
+                }
                 system("pause");
                 break;
             case 5:
-                divValores(num1, num2);
+                if (num1!=0 && num2!=0)
+                {
+                    divValores(num1, num2);
+                }
+                else
+                {
+                    printf("Primero debe cargar ambos operando.\n");
+                }
                 system("pause");
                 break;
             case 6:
-                multiValores(num1, num2);
+                if (num1!=0 && num2!=0)
+                {
+                    multiValores(num1, num2);
+                }
+                else
+                {
+                    printf("Primero debe cargar ambos operando.\n");
+                }
                 system("pause");
                 break;
             case 7:
-                facValores(num1, total, contador);
+                if (num1!=0)
+                {
+                    facValores(num1, total, contador);
+                }
+                else
+                {
+                    printf("En este caso primero debe cargar el primer operando.\n");
+                }
                 system("pause");
                 break;
             case 8:
-                allValores(num1, num2);
+                if (num1!=0 && num2!=0)
+                {
+                    allValores(num1, num2);
+                }
+                else
+                {
+                    printf("Primero debe cargar ambos operando.\n");
+                }
                 system("pause");
                 break;
             case 9:
@@ -77,7 +119,7 @@ int main()
                     seguir = 'n';
                 }
                 break;
-        }
+            }
         system("cls");
     }while (seguir=='s');
 
